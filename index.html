@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<title>ブラックジャックもどき</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<script type="text/javascript" src="./playingcards.js"></script>
+<script type="text/javascript" src="./blackjack.js"></script>
+
+</head>
+<body>
+<h1>ブラックジャックもどき</h1>
+<div id="playarea">
+	<a href="#" id="deck" onclick="return player_turn()"></a>
+	<div id="dealer_area"></div>
+	<a href="#" id="stand" onclick="return stand()">STAND</a>
+	<div id="player_area"></div>
+</div><!-- /#playarea -->
+<script>
+// ゲームを開始する
+window.onload = game_init();
+</script>
+</body>
+</html>
